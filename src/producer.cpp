@@ -1,5 +1,5 @@
 // Copyright 2026, Iurii Sernivka.
 
-#include "previx/producer/producer.h"
+#include "previxr/producer/producer.h"
 
-// TODO: Define previx::producer::Producer
+// TODO: Define PreviXR::Producer::Producer
