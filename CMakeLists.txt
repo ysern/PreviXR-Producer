@@ -23,7 +23,7 @@ target_include_directories(rvr-host-api
 	$<INSTALL_INTERFACE:include>
 )
 
-# The public networking surface, and deliberately not RVR::Networking.
+# The public networking surface, and deliberately not RVR::RemoteInterface.
 #
 # This target is the one third parties build against, so it links what they can
 # link. Reaching the device protocol from here would compile perfectly well and
@@ -31,7 +31,7 @@ target_include_directories(rvr-host-api
 # and this is the naming that proves the public half is sufficient on its own.
 target_link_libraries(rvr-host-api
 	PUBLIC
-	RVR::Networking::PublicApi
+	RVR::Core
 )
 
 target_compile_definitions(rvr-host-api
